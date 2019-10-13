@@ -1,29 +1,29 @@
 # Example of Web Application using Bootstrap Vue JS
-This is an example of web application using Bootstrap plus VueJs. This app is showing static data aggregating them together and making some brief short calculations. This app was developed on Ubuntu 18.04, however this should work on Windows or Mac as well. 
+
+This is an example of web application developed with Bootstrap plus VueJs framework. This app does local data aggregation from a json local file. Also it allows to the user input some parameters to make calculations on data aggregations. This has been developed in Ubuntu 18.04, however it should work on Windows or Mac as well. 
 
 ## Running the App
 
-First use git to clone this reposotiry onto your local computer from a terminal window:
+To run the app this may download the source code using git clone as follows:
 
 $ git clone https://github.com/rcolomina/app-bv-data-aggreg
 
-Enter within the cloned folder:
+Navigate to the downloaded folder:
 
 $ cd app-bv-data-aggreg
 
-Install npm to run this app:
+Install npm package manager to run the app:
 
 $ sudo apt-get install npm
 
-Type in the following command@
+Type in the following command to run the server:
 
 $ npm run serve
 
-On your terminal windows you should have the following output indicating that the web app is up and running:r
+The command should show the following text on the terminal window. Now this app its available on the localhost address at 8080 port.
 
 
 DONE  Compiled successfully in 5076ms                                                                                                                                                                     14:06:14
-
 
   App running at:
   - Local:   http://localhost:8080/ 
