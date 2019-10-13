@@ -86,10 +86,10 @@ var rowForTotalPopulation = [] // array of items for tota
 export default {
     name: 'app',
     mounted(){
-        console.log("mounted")
+        //console.log("mounted")
     },
     created() {
-        console.log("created")
+        //console.log("created")
         const arr = jsonData.map(p => p.Planet)
         const setPlanets = new Set(arr)
         planets = Array.from(setPlanets)
@@ -103,9 +103,9 @@ export default {
             femalesOnPlanets[planet] = femalesByPlanet.length
         })
         
-        console.log(malesOnPlanets)
-        console.log(femalesOnPlanets)
-        console.log(planets)
+        //console.log(malesOnPlanets)
+        //console.log(femalesOnPlanets)
+        //console.log(planets)
 
         planets.forEach(function(planet){
             populationOnPlanets.push({"Planet" :planet,
@@ -127,7 +127,7 @@ export default {
     },
     methods: {
         updateTable(){
-            console.log("udate table")
+            //console.log("udate table")
             
             var fieldsOnchange = []
             var fieldsOnchange2 = []
@@ -154,8 +154,8 @@ export default {
         },
         computePopulationScaling(){
             
-            console.log(this.factorA)
-            console.log(this.factorB)
+            //console.log(this.factorA)
+            //console.log(this.factorB)
 
             if(this.factorA === null || this.factorB === null){
 
@@ -168,8 +168,8 @@ export default {
             else
                 {            
                     // check inputs are numbers in valid range
-                    console.log(isNaN(this.factorA))
-                    console.log(isNaN(this.factorB))
+                    //console.log(isNaN(this.factorA))
+                    //console.log(isNaN(this.factorB))
 
                     var badCondition0 = isNaN(this.factorA) || isNaN(this.factorB)
                     var badCondition1 = this.factorA < 2 || this.factorA > 10000
