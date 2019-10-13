@@ -28,8 +28,8 @@ DONE  Compiled successfully in 5076ms                                           
 
 
   App running at:
-  - Local:   http://localhost:8081/ 
-  - Network: http://192.168.0.24:8081/
+  - Local:   http://localhost:8080/ 
+  - Network: http://192.168.0.24:8080/
 
   Note that the development build is not optimized.
   To create a production build, run npm run build.
