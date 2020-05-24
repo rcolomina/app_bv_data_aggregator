@@ -18,7 +18,7 @@
         :items="itemsTable"
         striped hover
         >
-        </b-table>     
+      </b-table>     
     </div>    
     <div class="row">      
       <b-table
@@ -81,7 +81,7 @@ var femalesOnPlanets = {}
 var planets = []
 var populationOnPlanets = [] // array of items to show on table
 var totalPopulation = {} // map of items  to show on foot table
-var rowForTotalPopulation = [] // array of items for tota
+var rowForTotalPopulation = [] // array of items for total population
 
 export default {
     name: 'app',
@@ -89,7 +89,7 @@ export default {
         //console.log("mounted")
     },
     created() {
-        //console.log("created")
+        console.log("created")
         const arr = jsonData.map(p => p.Planet)
         const setPlanets = new Set(arr)
         planets = Array.from(setPlanets)
@@ -127,7 +127,7 @@ export default {
     },
     methods: {
         updateTable(){
-            //console.log("udate table")
+            console.log("udate table")
             
             var fieldsOnchange = []
             var fieldsOnchange2 = []
@@ -200,10 +200,8 @@ export default {
     data() {
         return {
             sortBy: 'Planet',
-            fields1: [
-                { key: 'Planet',  sortable: true }]
-            ,
-            fields2 : [{ key: 'Set of Planets'}],
+            fields1: [{ key: 'Planet',  sortable: true }],
+            fields2: [{ key: 'Set of Planets'}],
             typeOfPeopleSelected: "",
             planets: [],
             malesOnPlanets:{},
